@@ -15,10 +15,6 @@ app.use('/api/v1/post',postRoutes);
 app.use('/api/v1/dalle',dalleRoutes);
 
 
-app.get('/',(req,res)=>{
-    res.json({message:"Fala fiote ta bao é"})
-})
-
 const startServer = async ()=>{
     try{
         connectDb(process.env.MONGODB_URL)
